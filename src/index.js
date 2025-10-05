@@ -18,9 +18,16 @@ import reportWebVitals from './reportWebVitals';
 // reportWebVitals();
 
 
-function helloWOrld(){
-  return <h1>Hello from Component</h1>
-}
+// function helloWOrld(){
+//   return <h1>Hello from Component</h1>
+// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<helloWOrld />);
+root.render(<MyComponent />);
+
+//JSX
+//Embedding Expressions in JSX
+function MyComponent(){
+  const name = "Rishi Harish";
+  return <h2>Hello {name}</h2>;
+}
