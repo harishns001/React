@@ -27,7 +27,20 @@ root.render(<MyComponent />);
 
 //JSX
 //Embedding Expressions in JSX
+// function MyComponent(){
+//   // const name = "Rishi Harish";
+//   const name = 2+5;
+//   return <h2>Hello {add(1, 6)}</h2>;
+// }
+
+//Javascript in JSX
+function add(x, y){
+  return x+y;
+}
+
+//Dynamic Attributes
 function MyComponent(){
-  const name = "Rishi Harish";
-  return <h2>Hello {name}</h2>;
+  const link = "https://piyushgarg.dev";
+  return <a href={link}>Click Me</a>;
+  
 }
